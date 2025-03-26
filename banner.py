@@ -12,7 +12,7 @@ def print_menu():
         print("2. 🧪 Audit weak passwords")
         print("3. 🎣 Check the phishing link")
         print("4. ℹ️  Information about the Tool")
-        print("5. ❌ Exit\n")
+        print("5. ❌ Exit (Press ""Exit"" to quit\n")
 
         print ("\n----------------------------------------------------------------------------------------------------\n")
         print(yellow(""" 👋 Welcome to Light Blue — Hacker Simulator 🧠💻""") +"""

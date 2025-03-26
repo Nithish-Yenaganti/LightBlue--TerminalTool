@@ -2,6 +2,7 @@ import requests
 from hashlib import sha1
 from utils import green, red, yellow
 
+
 def check_pwned_password(password):
     hashed = sha1(password.encode()).hexdigest().upper()
     prefix, suffix = hashed[:5], hashed[5:]

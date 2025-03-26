@@ -1,10 +1,12 @@
 import time
 import sys
+import os
 import requests
 from utils import green, red, yellow
 from utils import loader  # if loader is defined in a separate file
 
-API_KEY = "***REMOVED***"  # Replace with your real key
+
+API_KEY = os.getenv('VT_API_KEY')  # Replace with your real key
 
 def detect_phishing():
     url = input("\n🔗 Enter a URL to scan with VirusTotal: ").strip()

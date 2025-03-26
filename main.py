@@ -26,6 +26,9 @@ def main_menu():
         elif choice == "4":
             print("\n👋 Exiting.......Stay safe and secure.")
             break
+        elif choice.lower() == "exit":
+            print("\n👋 Exiting.......Stay safe and secure.")
+            break
         else:
             print("\nInvalid choice. Try again.")
 
