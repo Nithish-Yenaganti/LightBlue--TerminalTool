@@ -2,8 +2,8 @@ import time
 import sys
 import os
 import requests
-from utils import green, red, yellow
-from utils import loader  # if loader is defined in a separate file
+from light_blue.utils import green, red, yellow
+from light_blue.utils import loader  # if loader is defined in a separate file
 
 
 API_KEY = os.getenv('VT_API_KEY')  # Replace with your real key
