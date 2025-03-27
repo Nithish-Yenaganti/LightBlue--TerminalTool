@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='light-blue',  # The name that will appear on PyPI
+    name='light-blue-ep',  # The name that will appear on PyPI
     version='1.0.0',
     packages=find_packages(include=['light_blue', 'light_blue.*']),
     include_package_data=True,
