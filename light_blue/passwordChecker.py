@@ -1,6 +1,6 @@
 import requests
 from hashlib import sha1
-from utils import green, red, yellow
+from light_blue.utils import green, red, yellow
 
 
 def check_pwned_password(password):

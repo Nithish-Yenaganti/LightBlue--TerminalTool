@@ -1,4 +1,4 @@
-from utils import green, red, yellow
+from light_blue.utils import green, red, yellow
 import math
 
 def calculate_entropy(password):

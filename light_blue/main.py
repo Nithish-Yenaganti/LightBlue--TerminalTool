@@ -1,10 +1,10 @@
-#!/Users/sunny/Desktop/Terminal_game/myenv/bin/python
+#!/usr/bin/env python3
 
-from banner import banner
-from passwordChecker import check_pwned_password
-from passwordAuditor import audit_passwords as auditor
-from phishing_detector import detect_phishing
-from utils import yellow, red
+from light_blue.banner import banner
+from light_blue.passwordChecker import check_pwned_password
+from light_blue.passwordAuditor import audit_passwords as auditor
+from light_blue.phishing_detector import detect_phishing
+from light_blue.utils import yellow, red
 
 def show_tool_info(choice):
     if choice == "1-i":
@@ -26,8 +26,6 @@ def main_menu():
     banner()
 
     while True:
-        
-
         choice = input("Select an operation (1-4 or 1-i, 2-i...): ").strip().lower()
 
         if choice == "1":
