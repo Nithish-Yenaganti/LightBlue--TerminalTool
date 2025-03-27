@@ -4,7 +4,7 @@ import shutil
 import time
 from pyfiglet import Figlet
 from termcolor import colored
-from utils import yellow, green
+from utils import yellow
 
 def print_menu():
         print(yellow("\n🧠 Light Blue — Hacker simulator"))
