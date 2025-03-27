@@ -1,2 +1,0 @@
-[console_scripts]
-lightblue = light_blue.main:main_menu
