@@ -1,43 +1,51 @@
-# Light Blue — Hacker Simulator (Terminal Game)
+# Light Blue
 
-**Light Blue** is a fun, educational, and interactive terminal-based cybersecurity simulation tool built in Python.  
-It helps users **learn and explore basic security concepts** like password safety, entropy, and phishing detection — all from the comfort of your terminal.
+Light Blue is an educational terminal-based cybersecurity simulator built in Python. It teaches basic password safety, password auditing, and phishing URL scanning concepts without performing real offensive activity.
 
-Perfect for students, ethical hackers, and anyone curious about cybersecurity!
-
-> ⚠️ For educational use only. This tool simulates real-world scenarios but does **not perform any real hacking**.
-
----
+> Educational use only. This project simulates security workflows and should not be used as an offensive tool.
 
 ## Features
 
-### Password Breach Checker
+- Password breach check using Have I Been Pwned k-anonymity
+- Password strength and entropy auditing
+- Phishing URL scan flow using VirusTotal
+- Terminal UI with color and ASCII banner output
 
-Check if a password has been exposed in known data breaches using the [Have I Been Pwned](https://haveibeenpwned.com/) API (via k-anonymity for safety).
+## Setup
 
-### Password Auditor
-
-Evaluate a password’s strength based on:
-
-- Entropy (randomness)
-- Common weak patterns
-- Length & character variety  
-  Includes suggestions for improving weak passwords.
-
-### Phishing Link Scanner
-
-Scan suspicious URLs using the [VirusTotal](https://virustotal.com) API and detect if they’re malicious or flagged by security engines.
-
----
-
-## 🚀 How to Install
-
-`````bash
-pip install light-blue-ep
+```bash
+python -m venv .venv
+source .venv/bin/activate
 pip install -r requirements.txt
+cp .env.example .env
+```
 
-## How to Run After installing
-````bash
+Add your VirusTotal API key to `.env` if you want phishing scan support:
+
+```text
+VT_API_KEY=your_virustotal_key
+```
+
+## Run From Source
+
+```bash
+python -m light_blue.main
+```
+
+## Install As A CLI
+
+```bash
+pip install -e .
 lightblue
+```
 
-`````
+## Project Structure
+
+```text
+light_blue/main.py               # Menu and app entrypoint
+light_blue/passwordChecker.py    # Breach check flow
+light_blue/passwordAuditor.py    # Password strength flow
+light_blue/phishing_detector.py  # VirusTotal URL scan flow
+requirements.txt                 # Runtime dependencies
+setup.py                         # Local package metadata
+```
