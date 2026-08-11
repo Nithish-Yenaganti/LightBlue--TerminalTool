@@ -1,2 +1,12 @@
-#Ignore file for git
+# Environment files and secrets
 .env
+.env.*
+!.env.example
+
+# Python-generated files
+__pycache__/
+*.py[cod]
+
+# Local editor and operating-system files
+.vscode/
+.DS_Store
